@@ -195,3 +195,30 @@ a { color: inherit; }
     display: none;
   }
 }
+/* Logo VELYN maior, dourado e com efeito de relevo */
+@media (min-width: 861px) {
+  .brand {
+    width: 230px;
+    height: 110px;
+    overflow: visible;
+  }
+
+  .brand img {
+    width: 230px;
+    max-height: none;
+    transform: scale(1.18);
+    transform-origin: left center;
+    filter:
+      drop-shadow(1px 1px 0 rgba(255, 244, 194, 0.95))
+      drop-shadow(2px 3px 1px rgba(90, 56, 10, 0.38))
+      drop-shadow(0 5px 8px rgba(77, 48, 8, 0.18));
+  }
+
+  .site-header {
+    grid-template-columns: 245px 610px 1fr;
+  }
+
+  .desktop-nav {
+    transform: translateX(-10px);
+  }
+}
