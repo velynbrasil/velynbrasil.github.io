@@ -110,4 +110,54 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior:auto; }
   *, *::before, *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+/* Ajuste para telas intermediárias */
+@media (min-width: 861px) and (max-width: 1180px) {
+  .site-header {
+    grid-template-columns: 150px 1fr 110px;
+    padding-inline: 28px;
+  }
+
+  .brand {
+    width: 98px;
+    height: 72px;
+  }
+
+  .desktop-nav {
+    gap: 20px;
+  }
+
+  .desktop-nav a {
+    font-size: 11px;
+  }
+
+  .hero-content {
+    width: min(470px, 42vw);
+    margin-left: 34px;
+  }
+
+  .hero h1 strong {
+    font-size: clamp(58px, 7vw, 88px);
+  }
+
+  .hero h1 em {
+    font-size: clamp(42px, 5vw, 64px);
+  }
+
+  .hero-copy {
+    max-width: 390px;
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+  }
+
+  .button {
+    min-width: 185px;
+    padding-inline: 20px;
+  }
+
+  .hero-image {
+    object-position: 64% center;
+  }
 }
