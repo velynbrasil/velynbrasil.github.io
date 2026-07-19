@@ -189,3 +189,9 @@ a { color: inherit; }
     justify-content: flex-end;
   }
 }
+/* Remove a faixa branca sobre a foto no celular */
+@media (max-width: 860px) {
+  .hero-overlay {
+    display: none;
+  }
+}
