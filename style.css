@@ -161,3 +161,31 @@ a { color: inherit; }
     object-position: 64% center;
   }
 }
+/* Refinamento do cabeçalho desktop */
+@media (min-width: 861px) {
+  .site-header {
+    grid-template-columns: 180px auto 1fr;
+    justify-content: start;
+    column-gap: 28px;
+    padding-left: 48px;
+    padding-right: 36px;
+  }
+
+  .brand {
+    width: 148px;
+    height: 90px;
+  }
+
+  .brand img {
+    max-height: 88px;
+  }
+
+  .desktop-nav {
+    justify-content: flex-start;
+    gap: 26px;
+  }
+
+  .header-actions {
+    justify-content: flex-end;
+  }
+}
