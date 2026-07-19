@@ -110,6 +110,8 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior:auto; }
   *, *::before, *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}
+}
 /* Ajuste para telas intermediárias */
 @media (min-width: 861px) and (max-width: 1180px) {
   .site-header {
@@ -197,13 +199,12 @@ a { color: inherit; }
 }
 /* Logo VELYN maior, dourado e com efeito de relevo */
 @media (min-width: 861px) {
- .brand {
+.brand {
     display: inline-flex;
     width: 180px;
     height: 110px;
-}
     overflow: visible;
-  }
+}
 
   .brand img {
     width: 230px;
